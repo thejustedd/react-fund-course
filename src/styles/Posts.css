@@ -1,0 +1,31 @@
+.Posts {
+  width: 800px;
+}
+.post {
+  display: flex;
+  padding: 15px;
+  border: 2px solid teal;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.post__btns {
+  display: flex;
+}
+.post-enter {
+  transform: translateX(-100vw);
+  opacity: 0;
+}
+.post-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 500ms ease-in;
+}
+.post-exit {
+  opacity: 1;
+}
+.post-exit-active {
+  transform: translateX(-100vw);
+  opacity: 0;
+  transition: all 500ms ease-in;
+}

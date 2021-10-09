@@ -1,0 +1,23 @@
+.pageWrapper {
+  display: flex;
+  margin: 30px 0;
+}
+.page {
+  min-width: 40px;
+  padding: 10px;
+  border: 1px solid teal;
+  text-align: center;
+  cursor: pointer;
+}
+.page + .page {
+  margin-left: 10px;
+}
+.page:hover:not(.page--current) {
+  color: teal;
+  font-weight: 700;
+}
+.pageCurrent {
+  font-weight: 700;
+  color: #fff;
+  background-color: teal;
+}
